@@ -4,6 +4,7 @@ import json
 
 # Create your models here.
 class Mineral(models.Model):
+    """creates model instance"""
     """Makes instance of mineral with its associated attributes"""
     name = models.CharField(max_length=200)
     image_filename = models.CharField(max_length=300, null=True)

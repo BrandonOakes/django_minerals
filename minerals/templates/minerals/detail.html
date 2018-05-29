@@ -1,17 +1,16 @@
 {% extends "minerals/layout.html" %}
+{% load static %}
+
 
 {% block content %}
-<div class="bounds">
-</div>
-<h1 class="logo__name text-centered">Mineral Name</h1>
+<h1 class="logo__name text-centered">{{mineral.name}}</h1>
 </a>
 <p class="logo__text text-centered">They're not rocks!</p>
 </div>
 <div class="grid-100 mineral__container">
 <h1 class="mineral__name">{{mineral.name}}</h1>
 <div class="mineral__image-bg">
-<img class="mineral__image" src="images/{{mineral.name}}.jpg" alt="mineral image">
-<p> {{mineral.name}}</p>
+<img class="mineral__image" src="{% static 'minerals/images/' %}{{mineral.name}}.jpg" alt="mineral image">
 <p class="mineral__caption">{{mineral.image_caption}}</p>
 </div>
 <div class="mineral__table-container">
@@ -21,8 +20,8 @@
     <td>{{mineral.category}}</td>
   </tr>
   <tr>
-    <td class="mineral__category">Formula</td>
-    <td class="mineral__formula">{{mineral.formula}}</td>
+    <td class="mineral__category">Mohs Scale Hardness</td>
+    <td class="mineral__formula">{{mineral.mohs_scale_hardness}}</td>
   </tr>
   <tr>
     <td class="mineral__category">Strunz Classification</td>
@@ -41,8 +40,8 @@
     <td>fibrous</td>
   </tr>
   <tr>
-    <td class="mineral__category">Mohs Scale Hardness</td>
-    <td>3</td>
+    <td class="mineral__category">Formula</td>
+    <td>{{mineral.formula}}</td>
   </tr>
 </table>
 </div>
