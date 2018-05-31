@@ -1,4 +1,4 @@
-Mineral catalog
+#Mineral catalog
 
 Python web development project 6
 
