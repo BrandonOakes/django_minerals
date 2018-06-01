@@ -20,25 +20,25 @@ of tutorials online, so we won't cover it here.
 
 2. Next, clone to repo to get the code
 
-git clone https://github.com/BrandonOakes/django_minerals.git
+  git clone https://github.com/BrandonOakes/django_minerals.git
 
 
 3. From within the newly-cloned directory, install program requirements
 
 
-    pip install - requirements.txt
+    	pip install - requirements.txt
 
 
 4. Next, migrate the database
 
 
-    python manage.py makemigrations
+    	python manage.py makemigrations
 
 
-    python manage.py migrate
+    	python manage.py migrate
 
 
 5. Run server
 
 
-    python manage.py runserver
+    	python manage.py runserver
